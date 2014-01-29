@@ -19,7 +19,7 @@ var app = {
             self.showAlert('Store Initialized', 'Info');
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
-    }
+    },
 
     
     showAlert: function (message, title) {
@@ -28,7 +28,7 @@ var app = {
         } else {
             alert(title ? (title + ": " + message) : message);
         }
-    },
+    }
 
 
 };
