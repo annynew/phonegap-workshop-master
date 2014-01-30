@@ -14,13 +14,15 @@ var app = {
 
 
 	initialize : function() {
-		this.homeTpl = Handlebars.compile($("#home-tpl").html());
-		this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
-
 		var self = this;
+		self.homeTpl = Handlebars.compile($("#home-tpl").html());
+		self.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+
 		this.store = new MemoryStore(function() {
+			
 			self.renderHomeView();
 		});
+		
 	},
 
 	showAlert : function(message, title) {
