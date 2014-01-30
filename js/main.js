@@ -20,7 +20,7 @@ var app = {
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     },
-
+ 
     
     showAlert: function (message, title) {
         if (navigator.notification) {
